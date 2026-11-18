@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Doce Legal · Cestas de presente no Ipiranga</title>
+<meta name="description" content="Cestas de presente, sacolinhas personalizadas e muitos doces na Rua Silva Bueno, 1579, Ipiranga. Escolha um modelo ou monte a sua e peça pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap">
+<style>
+:root{
+  --plum:#2a1240; --plum-2:#3b1a5c; --ink:#26162f; --muted:#6d5f78; --line:#ecdff3;
+  --paper:#fffaf5; --card:#ffffff; --pink:#ff3d8b; --pink-soft:#ffe3ef; --yellow:#ffc928;
+  --cyan:#29c3e6; --green:#1fa35c; --gold:#c9a15a;
+  --display:"Fredoka",system-ui,sans-serif; --body:"Nunito Sans",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+
+/* topo */
+.topo{position:sticky;top:0;z-index:20;background:rgba(42,18,64,.94);backdrop-filter:blur(8px);color:#fff}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:60px}
+.marca{display:flex;align-items:baseline;gap:8px;text-decoration:none}
+.marca b{font:700 1.45rem/1 var(--display);letter-spacing:.01em}
+.marca b span:nth-child(1){color:var(--yellow)}.marca b span:nth-child(2){color:var(--pink)}.marca b span:nth-child(3){color:var(--cyan)}.marca b span:nth-child(4){color:#8ee06a}
+.marca b{white-space:nowrap}
+.marca small{font-size:.78rem;color:#d9c9e6;white-space:nowrap}
+@media(max-width:430px){.marca small{display:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:12px 20px;font-weight:700;text-decoration:none;transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.btn-zap{background:var(--green);color:#fff}
+.btn-rosa{background:var(--pink);color:#fff}
+.btn-claro{background:#fff;color:var(--plum)}
+.btn-borda{background:transparent;color:var(--plum);border:2px solid var(--plum)}
+.topo .btn{padding:9px 14px;font-size:.9rem}
+svg.ic{width:18px;height:18px;flex:none}
+
+/* hero */
+.hero{background:var(--plum);color:#fff;overflow:hidden}
+.hero .wrap{display:grid;gap:28px;padding-top:36px;padding-bottom:44px}
+@media(min-width:860px){.hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center;padding-top:56px;padding-bottom:64px}}
+.selo{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:5px 12px;font-size:.85rem;color:#f3e6ff}
+.hero h1{font:700 clamp(2.1rem,6vw,3.4rem)/1.05 var(--display);margin:14px 0 14px}
+.hero h1 em{font-style:normal;color:var(--yellow)}
+.hero p.sub{color:#e5d7f0;font-size:1.08rem;max-width:34ch;margin:0 0 22px}
+.hero .acoes{display:flex;flex-wrap:wrap;gap:10px}
+.hero-foto{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:4/3.4;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.hero-foto img{width:100%;height:100%;object-fit:cover}
+.hero-foto .etq{position:absolute;left:14px;bottom:14px;background:#fff;color:var(--plum);border-radius:14px;padding:8px 12px;font-weight:700;font-size:.9rem}
+.fatos{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;color:#d9c9e6;font-size:.9rem}
+.fatos span::before{content:"●";color:var(--pink);margin-right:6px;font-size:.7em;vertical-align:2px}
+
+/* seções */
+section{padding:56px 0}
+.tit{font:700 clamp(1.6rem,4.4vw,2.3rem)/1.1 var(--display);margin:0 0 8px;color:var(--plum)}
+.tit-sub{color:var(--muted);margin:0 0 26px;max-width:60ch}
+
+/* modelos */
+.modelos{display:grid;gap:18px}
+@media(min-width:640px){.modelos{grid-template-columns:1fr 1fr}}
+@media(min-width:980px){.modelos{grid-template-columns:repeat(4,1fr)}}
+.modelo{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column}
+.modelo .foto{aspect-ratio:4/3;overflow:hidden;background:var(--pink-soft)}
+@media(min-width:980px){.modelo .foto{aspect-ratio:1/1.05}}
+.modelo .foto img{width:100%;height:100%;object-fit:cover}
+.modelo .info{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.modelo h3{font:600 1.25rem/1.15 var(--display);margin:0;color:var(--plum)}
+.modelo p{margin:0;color:var(--muted);font-size:.93rem}
+.preco{font:700 1.15rem var(--display);color:var(--pink);margin-top:auto;padding-top:6px}
+.preco small{font:600 .78rem var(--body);color:var(--muted);display:block}
+.modelo .btns{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.modelo .btns .btn{padding:10px 8px;font-size:.88rem}
+
+/* montador */
+.montar{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.passos{display:grid;gap:28px}
+@media(min-width:980px){.montar .grade{display:grid;grid-template-columns:1fr 340px;gap:32px;align-items:start}}
+.passo h3{font:600 1.2rem var(--display);color:var(--plum);margin:0 0 12px;display:flex;align-items:center;gap:10px}
+.passo h3 .n{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--plum);color:#fff;font-size:.95rem}
+.bases{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.base{border:2px solid var(--line);background:var(--paper);border-radius:16px;padding:12px 14px;text-align:left;display:grid;gap:2px;color:var(--ink)}
+.base b{font:600 1.05rem var(--display);color:var(--plum)}
+.base span{font-size:.85rem;color:var(--muted)}
+.base i{font-style:normal;font-weight:700;color:var(--pink)}
+.base[aria-pressed="true"]{border-color:var(--pink);background:var(--pink-soft)}
+.grupo{margin-bottom:16px}
+.grupo h4{margin:0 0 8px;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.itens{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.item{display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid var(--line);border-radius:14px;padding:9px 10px 9px 14px;background:var(--paper)}
+.item.tem{border-color:var(--pink);background:var(--pink-soft)}
+.item .nome{font-weight:600;font-size:.95rem;line-height:1.25}
+.item .nome small{display:block;color:var(--muted);font-weight:600}
+.qtd{display:flex;align-items:center;gap:6px;flex:none}
+.qtd button{width:34px;height:34px;border-radius:50%;border:0;background:#fff;color:var(--plum);font-weight:700;font-size:1.15rem;box-shadow:inset 0 0 0 1.5px var(--line)}
+.item.tem .qtd button.mais{background:var(--pink);color:#fff;box-shadow:none}
+.qtd output{min-width:18px;text-align:center;font-weight:700}
+.campos{display:grid;gap:12px}
+@media(min-width:640px){.campos{grid-template-columns:1fr 1fr}}
+.campo{display:grid;gap:5px}
+.campo.full{grid-column:1/-1}
+.campo label,.campo .lb{font-weight:700;font-size:.9rem}
+.campo input,.campo textarea,.campo select{font:inherit;border:1.5px solid var(--line);border-radius:12px;padding:11px 12px;background:var(--paper);color:var(--ink);width:100%}
+.campo textarea{min-height:76px;resize:vertical}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{border:1.5px solid var(--line);background:var(--paper);border-radius:999px;padding:8px 14px;font-weight:600;color:var(--ink)}
+.chips button[aria-pressed="true"]{background:var(--plum);border-color:var(--plum);color:#fff}
+
+/* resumo */
+.resumo{background:var(--plum);color:#fff;border-radius:22px;padding:18px;display:grid;gap:10px}
+@media(min-width:980px){.resumo{position:sticky;top:80px}}
+.resumo h3{font:600 1.2rem var(--display);margin:0}
+.resumo ul{list-style:none;margin:0;padding:0;display:grid;gap:5px;font-size:.92rem;color:#eadcf5;max-height:240px;overflow:auto}
+.resumo li{display:flex;justify-content:space-between;gap:10px}
+.resumo .vazio{color:#cdb9dd;font-size:.92rem}
+.total{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid rgba(255,255,255,.18);padding-top:10px}
+.total b{font:700 1.6rem var(--display);color:var(--yellow)}
+.resumo .nota{font-size:.8rem;color:#cdb9dd;margin:0}
+.resumo .btn{width:100%;padding:14px}
+.aviso-base{font-size:.85rem;color:var(--yellow);margin:0;min-height:1.2em}
+
+/* barra fixa no celular */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--plum);color:#fff;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 -8px 24px rgba(0,0,0,.2);transform:translateY(110%);transition:transform .25s}
+.barra.on{transform:none}
+.barra .t{font-size:.8rem;color:#d9c9e6;line-height:1.2}
+.barra .t b{display:block;font:700 1.25rem var(--display);color:var(--yellow)}
+@media(min-width:980px){.barra{display:none}}
+
+/* natal */
+.natal{background:linear-gradient(0deg,#fff 0,#fff 0) ,var(--paper)}
+.natal-box{background:#b3122e;color:#fff;border-radius:26px;padding:28px 22px;display:grid;gap:18px;overflow:hidden;position:relative}
+@media(min-width:860px){.natal-box{grid-template-columns:1.2fr .8fr;align-items:center;padding:40px}}
+.natal-box h2{font:700 clamp(1.7rem,4.6vw,2.4rem)/1.08 var(--display);margin:0 0 10px}
+.natal-box p{margin:0 0 18px;color:#ffe0e4;max-width:46ch}
+.natal-box ol{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.natal-box li{background:rgba(255,255,255,.12);border-radius:14px;padding:10px 14px;display:flex;gap:10px;align-items:flex-start}
+.natal-box li b{font:700 1.1rem var(--display);color:var(--yellow);min-width:20px}
+
+/* loja */
+.loja{display:grid;gap:22px}
+@media(min-width:860px){.loja{grid-template-columns:1fr 1fr;align-items:center}}
+.fotos-loja{display:grid;grid-template-columns:1.3fr 1fr;gap:10px}
+.fotos-loja img{border-radius:18px;width:100%;height:100%;object-fit:cover;aspect-ratio:1/1}
+.fotos-loja img:first-child{grid-row:span 2;aspect-ratio:auto}
+.dados{display:grid;gap:12px;margin:18px 0 22px}
+.dados div{display:flex;gap:12px;align-items:flex-start}
+.dados svg{width:22px;height:22px;flex:none;color:var(--pink);margin-top:2px}
+
+footer{background:var(--plum);color:#cdb9dd;padding:28px 0 96px;font-size:.88rem}
+@media(min-width:980px){footer{padding-bottom:28px}}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between}
+footer a{color:#fff}
+
+/* toast */
+.toast{position:fixed;left:50%;top:76px;transform:translateX(-50%) translateY(-20px);opacity:0;background:var(--ink);color:#fff;padding:10px 16px;border-radius:999px;font-weight:600;font-size:.9rem;z-index:40;transition:.25s;pointer-events:none}
+.toast.on{opacity:1;transform:translateX(-50%)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="#inicio" aria-label="Doce Legal, início">
+      <b><span>Do</span><span>ce</span> <span>Le</span><span>gal</span></b>
+      <small>Bomboniere · Ipiranga</small>
+    </a>
+    <a class="btn btn-zap" id="zap-topo" href="#" target="_blank" rel="noopener">
+      <svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="selo">Rua Silva Bueno, 1579 · Ipiranga</span>
+      <h1>Cestas de presente <em>montadas do seu jeito</em></h1>
+      <p class="sub">Escolha um modelo pronto ou monte a sua item por item. Seu pedido chega no nosso WhatsApp já com tudo escrito.</p>
+      <div class="acoes">
+        <a class="btn btn-rosa" href="#montar">Montar minha cesta</a>
+        <a class="btn btn-claro" href="#modelos">Ver modelos</a>
+      </div>
+      <div class="fatos"><span>Cestas de presente</span><span>Sacolinhas personalizadas</span><span>Muitos doces</span></div>
+    </div>
+    <div class="hero-foto">
+      <img src="img/cesta-para-voce.jpg" alt="Cesta de presente com flores, caneca, Ferrero Rocher e chocolates" fetchpriority="high">
+      <span class="etq">Feita aqui na loja, com cartão</span>
+    </div>
+  </div>
+</section>
+
+<section id="modelos">
+  <div class="wrap">
+    <h2 class="tit">Modelos prontos</h2>
+    <p class="tit-sub">Peça como está ou use como ponto de partida e troque o que quiser.</p>
+    <div class="modelos" id="lista-modelos"></div>
+  </div>
+</section>
+
+<section id="montar" class="montar">
+  <div class="wrap">
+    <h2 class="tit">Monte a sua cesta</h2>
+    <p class="tit-sub">Escolha o tamanho, os mimos e a mensagem do cartão. O valor vai somando aqui do lado.</p>
+    <div class="grade">
+      <div class="passos">
+        <div class="passo">
+          <h3><span class="n">1</span>Tamanho</h3>
+          <div class="bases" id="bases"></div>
+        </div>
+        <div class="passo">
+          <h3><span class="n">2</span>O que vai dentro</h3>
+          <div id="grupos"></div>
+        </div>
+        <div class="passo">
+          <h3><span class="n">3</span>Para quem é</h3>
+          <div class="campos">
+            <div class="campo full"><span class="lb" id="lb-ocasiao">Ocasião</span>
+              <div class="chips" id="ocasioes" role="group" aria-labelledby="lb-ocasiao"></div>
+            </div>
+            <div class="campo"><label for="c-para">Nome de quem vai receber</label><input id="c-para" autocomplete="off" placeholder="Ex.: Ana"></div>
+            <div class="campo"><label for="c-data">Para quando?</label><input id="c-data" type="date"></div>
+            <div class="campo full"><label for="c-cartao">Mensagem do cartão</label><textarea id="c-cartao" maxlength="220" placeholder="Ex.: Feliz aniversário! Com muito carinho."></textarea></div>
+            <div class="campo full"><span class="lb" id="lb-receber">Como prefere receber</span>
+              <div class="chips" id="receber" role="group" aria-labelledby="lb-receber"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside class="resumo" id="resumo" aria-live="polite">
+        <h3>Sua cesta</h3>
+        <ul id="resumo-lista"></ul>
+        <div class="total"><span>Total estimado</span><b id="total">R$ 0</b></div>
+        <p class="aviso-base" id="aviso-base"></p>
+        <a class="btn btn-zap" id="enviar" href="#" target="_blank" rel="noopener">
+          <svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z"/></svg>
+          Enviar pedido no WhatsApp
+        </a>
+        <p class="nota">A gente confirma os itens disponíveis e o valor final pelo WhatsApp.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="natal">
+  <div class="wrap">
+    <div class="natal-box">
+      <div>
+        <h2>Natal chegando: garanta suas cestas</h2>
+        <p>Presente para a família, para a equipe ou para o amigo secreto. Encomende com antecedência e retire pronta na loja.</p>
+        <a class="btn btn-claro" href="#montar">Montar cesta de Natal</a>
+      </div>
+      <ol>
+        <li><b>1</b><span>Monte a cesta aqui ou escolha um modelo.</span></li>
+        <li><b>2</b><span>Envie pelo WhatsApp e a gente confirma.</span></li>
+        <li><b>3</b><span>Retire na Silva Bueno, embrulhada e com cartão.</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap loja">
+    <div class="fotos-loja">
+      <img src="img/loja.jpg" alt="Interior da Doce Legal com prateleiras de doces e luzes neon" loading="lazy">
+      <img src="img/balcao.jpg" alt="Balcão com balas e chicletes" loading="lazy">
+      <img src="img/pao-de-mel.jpg" alt="Pães de mel embalados" loading="lazy">
+    </div>
+    <div>
+      <h2 class="tit">Venha nos visitar</h2>
+      <p class="tit-sub" style="margin-bottom:0">A parada mais doce do Ipiranga: muitos doces, cestas de presente e mimos.</p>
+      <div class="dados">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 0 0-14 0c0 5.9 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Rua Silva Bueno, 1579<br>Ipiranga, São Paulo · 04208-051</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><a href="https://www.instagram.com/docelegal.ipiranga/" target="_blank" rel="noopener">@docelegal.ipiranga</a></div>
+      </div>
+      <div class="acoes" style="display:flex;flex-wrap:wrap;gap:10px">
+        <a class="btn btn-borda" href="https://www.google.com/maps/search/?api=1&query=Rua%20Silva%20Bueno%2C%201579%2C%20Ipiranga%2C%20S%C3%A3o%20Paulo" target="_blank" rel="noopener">Ver no mapa</a>
+        <a class="btn btn-zap" id="zap-loja" href="#" target="_blank" rel="noopener">Falar no WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Doce Legal · Bomboniere Ipiranga · desde 2026</span>
+    <a href="https://www.instagram.com/docelegal.ipiranga/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</footer>
+
+<div class="barra" id="barra">
+  <div class="t">Sua cesta<b id="total-barra">R$ 0</b></div>
+  <a class="btn btn-zap" id="enviar-barra" href="#" target="_blank" rel="noopener">Enviar no WhatsApp</a>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const ZAP = "5511993622559";
+
+const BASES = [
+  {id:"pequena", nome:"Cesta pequena", desc:"Até 6 mimos", preco:35},
+  {id:"media", nome:"Cesta média", desc:"Até 12 mimos", preco:55},
+  {id:"grande", nome:"Cesta grande", desc:"Com caneca ou flores", preco:79},
+  {id:"sacolinha", nome:"Sacolinha personalizada", desc:"Com tag do aniversariante", preco:18}
+];
+
+const GRUPOS = [
+  {nome:"Chocolates", itens:[
+    {id:"ferrero", nome:"Ferrero Rocher", det:"caixa com 8", preco:29},
+    {id:"talento", nome:"Talento", det:"barra", preco:9},
+    {id:"bombom", nome:"Bombom de cereja", det:"unidade", preco:4},
+    {id:"alfajor", nome:"Alfajor", det:"unidade", preco:7},
+    {id:"bis", nome:"Bis", det:"caixa", preco:8},
+    {id:"creme", nome:"Creme de avelã", det:"pote", preco:16}
+  ]},
+  {nome:"Balas e docinhos", itens:[
+    {id:"fini", nome:"Gomas Fini", det:"pacote", preco:8},
+    {id:"pirulito", nome:"Pirulitos", det:"kit com 5", preco:6},
+    {id:"mentos", nome:"Mentos", det:"unidade", preco:4},
+    {id:"paodemel", nome:"Pão de mel", det:"unidade", preco:9}
+  ]},
+  {nome:"Salgadinhos", itens:[
+    {id:"torcida", nome:"Torcida", det:"pacote", preco:5},
+    {id:"biscoito", nome:"Biscoito recheado", det:"pacote", preco:5}
+  ]},
+  {nome:"Mimos e acabamento", itens:[
+    {id:"caneca", nome:"Caneca", det:"de cerâmica", preco:25},
+    {id:"flores", nome:"Flores naturais", det:"buquê pequeno", preco:35},
+    {id:"tag3d", nome:"Tag personalizada 3D", det:"com o nome", preco:10}
+  ]}
+];
+
+const MODELOS = [
+  {id:"carinho", nome:"Cesta Carinho", foto:"img/cesta-carinho.jpg", alt:"Cesta de vime com Ferrero Rocher, Talento e chocolates", desc:"Ferrero Rocher, Talento, creme de avelã e bombons.", base:"media", itens:{ferrero:1,talento:2,creme:1,bombom:4}},
+  {id:"paravoce", nome:"Cesta Para Você", foto:"img/cesta-para-voce.jpg", alt:"Cesta grande com flores, caneca e chocolates", desc:"A completa: caneca, flores, chocolates e salgadinho.", base:"grande", itens:{caneca:1,flores:1,ferrero:1,talento:1,alfajor:2,torcida:1,mentos:1,bombom:2}},
+  {id:"docinhos", nome:"Cesta Docinhos", foto:"img/cesta-docinhos.jpg", alt:"Cesta com gomas Fini, pirulitos e balas coloridas", desc:"Gomas, pirulitos e balas. Sucesso com a criançada.", base:"media", itens:{fini:3,pirulito:2,mentos:2,bombom:3}},
+  {id:"aniversario", nome:"Sacolinha de aniversário", foto:"img/sacolinha-aniversario.jpg", alt:"Sacola rosa com tag personalizada de aniversário", desc:"Com tag do aniversariante. Ideal para lembrancinha.", base:"sacolinha", itens:{tag3d:1,fini:1,pirulito:1}}
+];
+
+const OCASIOES = ["Aniversário","Natal","Amigo secreto","Agradecimento","Só porque sim"];
+const RECEBER = ["Retirar na loja","Combinar entrega"];
+
+const ITENS = Object.fromEntries(GRUPOS.flatMap(g => g.itens).map(i => [i.id, i]));
+const estado = {base:null, qtd:{}, ocasiao:null, receber:"Retirar na loja"};
+const brl = v => "R$ " + v.toLocaleString("pt-BR");
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function precoModelo(m){
+  const b = BASES.find(x => x.id === m.base).preco;
+  return b + Object.entries(m.itens).reduce((s,[id,q]) => s + ITENS[id].preco*q, 0);
+}
+function linkZap(msg){ return "https://wa.me/" + ZAP + "?text=" + encodeURIComponent(msg); }
+
+function renderModelos(){
+  $("lista-modelos").innerHTML = MODELOS.map(m => `
+    <article class="modelo">
+      <div class="foto"><img src="${m.foto}" alt="${esc(m.alt)}" loading="lazy"></div>
+      <div class="info">
+        <h3>${esc(m.nome)}</h3>
+        <p>${esc(m.desc)}</p>
+        <div class="preco"><small>a partir de</small>${brl(precoModelo(m))}</div>
+        <div class="btns">
+          <a class="btn btn-zap" href="${linkZap(`Olá, Doce Legal! Quero a ${m.nome} (a partir de ${brl(precoModelo(m))}). Pode me passar os detalhes?`)}" target="_blank" rel="noopener">Quero essa</a>
+          <button class="btn btn-borda" type="button" data-modelo="${m.id}">Personalizar</button>
+        </div>
+      </div>
+    </article>`).join("");
+  document.querySelectorAll("[data-modelo]").forEach(b => b.addEventListener("click", () => {
+    const m = MODELOS.find(x => x.id === b.dataset.modelo);
+    estado.base = m.base; estado.qtd = {...m.itens};
+    renderMontador(); toast(m.nome + " carregada. Troque o que quiser.");
+    $("montar").scrollIntoView({behavior:"smooth"});
+  }));
+}
+
+function renderBases(){
+  $("bases").innerHTML = BASES.map(b => `
+    <button type="button" class="base" data-base="${b.id}" aria-pressed="${estado.base===b.id}">
+      <b>${esc(b.nome)}</b><span>${esc(b.desc)}</span><i>${brl(b.preco)}</i>
+    </button>`).join("");
+  document.querySelectorAll("[data-base]").forEach(el => el.addEventListener("click", () => {
+    estado.base = el.dataset.base; renderMontador();
+  }));
+}
+
+function renderGrupos(){
+  $("grupos").innerHTML = GRUPOS.map(g => `
+    <div class="grupo"><h4>${esc(g.nome)}</h4><div class="itens">
+      ${g.itens.map(i => { const q = estado.qtd[i.id]||0; return `
+        <div class="item${q?" tem":""}">
+          <span class="nome">${esc(i.nome)}<small>${esc(i.det)} · ${brl(i.preco)}</small></span>
+          <span class="qtd">
+            <button type="button" class="menos" data-item="${i.id}" data-d="-1" aria-label="Tirar ${esc(i.nome)}">−</button>
+            <output aria-label="Quantidade de ${esc(i.nome)}">${q}</output>
+            <button type="button" class="mais" data-item="${i.id}" data-d="1" aria-label="Pôr ${esc(i.nome)}">+</button>
+          </span>
+        </div>`; }).join("")}
+    </div></div>`).join("");
+  document.querySelectorAll("[data-item]").forEach(b => b.addEventListener("click", () => {
+    const id = b.dataset.item, n = Math.max(0, Math.min(20, (estado.qtd[id]||0) + Number(b.dataset.d)));
+    if (n) estado.qtd[id] = n; else delete estado.qtd[id];
+    renderMontador();
+  }));
+}
+
+function renderChips(alvo, lista, chave){
+  $(alvo).innerHTML = lista.map(o => `<button type="button" data-chip="${esc(o)}" aria-pressed="${estado[chave]===o}">${esc(o)}</button>`).join("");
+  $(alvo).querySelectorAll("[data-chip]").forEach(b => b.addEventListener("click", () => {
+    estado[chave] = estado[chave] === b.dataset.chip && chave === "ocasiao" ? null : b.dataset.chip;
+    renderChips(alvo, lista, chave); atualizar();
+  }));
+}
+
+function total(){
+  const b = estado.base ? BASES.find(x => x.id === estado.base).preco : 0;
+  return b + Object.entries(estado.qtd).reduce((s,[id,q]) => s + ITENS[id].preco*q, 0);
+}
+
+function mensagem(){
+  const base = BASES.find(x => x.id === estado.base);
+  const L = ["Olá, Doce Legal! Montei uma cesta pelo site:", ""];
+  L.push("*" + (base ? base.nome : "Tamanho a definir") + "*" + (base ? " (" + brl(base.preco) + ")" : ""));
+  const itens = Object.entries(estado.qtd);
+  if (itens.length){ L.push(""); itens.forEach(([id,q]) => L.push(`• ${q}x ${ITENS[id].nome} (${ITENS[id].det}) — ${brl(ITENS[id].preco*q)}`)); }
+  L.push("");
+  if (estado.ocasiao) L.push("Ocasião: " + estado.ocasiao);
+  const para = $("c-para").value.trim(); if (para) L.push("Para: " + para);
+  const data = $("c-data").value; if (data){ const [a,m,d] = data.split("-"); L.push("Para o dia: " + d + "/" + m + "/" + a); }
+  const cartao = $("c-cartao").value.trim(); if (cartao) L.push('Cartão: "' + cartao + '"');
+  L.push(estado.receber + ".");
+  L.push("", "*Total estimado: " + brl(total()) + "*", "", "Pode confirmar pra mim?");
+  return L.join("\n");
+}
+
+function atualizar(){
+  const base = BASES.find(x => x.id === estado.base);
+  const itens = Object.entries(estado.qtd);
+  const linhas = [];
+  if (base) linhas.push(`<li><span>${esc(base.nome)}</span><span>${brl(base.preco)}</span></li>`);
+  itens.forEach(([id,q]) => linhas.push(`<li><span>${q}x ${esc(ITENS[id].nome)}</span><span>${brl(ITENS[id].preco*q)}</span></li>`));
+  $("resumo-lista").innerHTML = linhas.length ? linhas.join("") : '<li class="vazio">Escolha um tamanho e os mimos. Ou comece por um modelo pronto.</li>';
+  const t = brl(total());
+  $("total").textContent = t; $("total-barra").textContent = t;
+  $("aviso-base").textContent = !base && itens.length ? "Falta escolher o tamanho da cesta." : "";
+  const ok = !!base;
+  const href = ok ? linkZap(mensagem()) : "#montar";
+  [$("enviar"), $("enviar-barra")].forEach(a => { a.href = href; a.target = ok ? "_blank" : ""; });
+  $("barra").classList.toggle("on", ok || itens.length > 0);
+}
+
+function renderMontador(){ renderBases(); renderGrupos(); atualizar(); }
+
+function toast(t){ const el = $("toast"); el.textContent = t; el.classList.add("on"); clearTimeout(toast.t); toast.t = setTimeout(() => el.classList.remove("on"), 2200); }
+
+[$("enviar"), $("enviar-barra")].forEach(a => a.addEventListener("click", e => {
+  if (!estado.base){ e.preventDefault(); toast("Escolha o tamanho da cesta primeiro."); $("bases").scrollIntoView({behavior:"smooth", block:"center"}); }
+}));
+["c-para","c-data","c-cartao"].forEach(id => $(id).addEventListener("input", atualizar));
+$("zap-topo").href = linkZap("Olá, Doce Legal! Vi o site de vocês e queria saber sobre as cestas de presente.");
+$("zap-loja").href = $("zap-topo").href;
+const hoje = new Date(); $("c-data").min = new Date(hoje.getTime() - hoje.getTimezoneOffset()*60000).toISOString().slice(0,10);
+
+renderModelos();
+renderChips("ocasioes", OCASIOES, "ocasiao");
+renderChips("receber", RECEBER, "receber");
+renderMontador();
+</script>
+</body>
+</html>

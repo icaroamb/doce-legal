@@ -143,12 +143,30 @@ h2{font:700 clamp(1.7rem,5vw,2.5rem)/1.05 var(--display);color:var(--plum);margi
 .barra .btn{padding:11px 16px}
 @media(min-width:1020px){.barra{display:none}}
 
-/* natal */
-.natal .wrap{display:grid;gap:22px;align-items:center}
-@media(min-width:760px){.natal .wrap{grid-template-columns:.9fr 1.1fr}}
-.natal img{border-radius:12px;aspect-ratio:4/3;object-fit:cover;width:100%;max-height:520px}
-@media(min-width:760px){.natal img{aspect-ratio:4/5}}
-.natal p{font-size:1.08rem;margin:0 0 18px;max-width:40ch}
+/* natal: embrulho de presente */
+.natal{padding:56px 0;background:#9f0f27;background-image:radial-gradient(rgba(255,255,255,.09) 1.2px,transparent 1.6px),radial-gradient(rgba(255,212,59,.12) 1px,transparent 1.4px);background-size:26px 26px,41px 41px;background-position:0 0,13px 9px}
+.presente{position:relative;background:var(--white);border-radius:14px;overflow:hidden;box-shadow:0 24px 60px rgba(40,0,10,.35)}
+.presente::before,.presente::after{content:"";position:absolute;background:#d8a93a;z-index:2;pointer-events:none;box-shadow:0 0 0 1px rgba(120,80,0,.15)}
+.presente::before{top:0;bottom:0;left:22px;width:14px}
+.presente::after{left:0;right:0;top:22px;height:14px}
+@media(min-width:760px){.presente::before{left:50%;margin-left:-7px}}
+.presente .dentro{position:relative;z-index:1;display:grid}
+@media(min-width:760px){.presente .dentro{grid-template-columns:1fr 1fr}}
+.presente .foto{position:relative;min-height:240px}
+.presente .foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.presente .texto{position:relative;z-index:3;padding:30px 22px 26px 22px;background:var(--white);margin:36px 0 0 36px}
+@media(min-width:760px){.presente .texto{margin:36px 0 0 0;padding:40px 36px 34px}}
+.contagem{display:inline-block;font-weight:800;font-size:.85rem;color:#9f0f27;letter-spacing:.02em;margin:0 0 6px}
+.presente h2{color:#9f0f27;font-size:clamp(2rem,6vw,2.8rem);margin:0 0 10px}
+.presente .texto>p{margin:0 0 20px;color:var(--ink)}
+.natal-op{display:grid;gap:10px;margin-bottom:18px}
+.natal-op button{display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;border:1.5px solid #f0d6dc;background:#fff7f8;border-radius:10px;padding:12px 14px}
+.natal-op button:hover{border-color:#9f0f27}
+.natal-op b{display:block;font-weight:800;color:var(--ink)}
+.natal-op small{color:var(--muted);font-size:.86rem}
+.natal-op .p{font-weight:800;color:#9f0f27;white-space:nowrap}
+.natal-op .p::after{content:" →"}
+.presente .link{color:#9f0f27}
 
 /* loja */
 .loja-fotos{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:8px;margin-bottom:24px}
@@ -242,13 +260,19 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   </div>
 </section>
 
-<section class="natal">
+<section class="natal" id="natal">
   <div class="wrap">
-    <img src="img/cesta-docinhos.jpg" alt="Cesta de doces com laço vermelho" loading="lazy">
-    <div>
-      <h2>Natal</h2>
-      <p>Cesta para a família, para a equipe do trabalho ou para o amigo secreto. Monte aqui, mande pelo WhatsApp e retire pronta na loja, embrulhada e com cartão.</p>
-      <button class="btn btn-zap" type="button" id="natal-btn" style="background:#b3122e">Montar uma cesta de Natal</button>
+    <div class="presente">
+      <div class="dentro">
+        <div class="foto"><img src="img/cesta-docinhos.jpg" alt="Cesta de doces com laço vermelho" loading="lazy"></div>
+        <div class="texto">
+          <p class="contagem num" id="contagem"></p>
+          <h2>Cestas de Natal</h2>
+          <p>Para a família, para a equipe do trabalho ou para o amigo secreto. Monte aqui, mande pelo WhatsApp e retire pronta na loja, embrulhada e com cartão.</p>
+          <div class="natal-op" id="natal-op"></div>
+          <button class="link" type="button" id="natal-btn">Ou monte a sua do zero</button>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -327,6 +351,12 @@ const MODELOS = [
   {id:"paravoce", nome:"Cesta Para Você", foto:"img/cesta-para-voce.jpg", alt:"Cesta grande com flores, caneca e chocolates", desc:"Caneca, flores, chocolates e salgadinho.", base:"grande", itens:{caneca:1,flores:1,ferrero:1,talento:1,alfajor:2,torcida:1,mentos:1,bombom:2}},
   {id:"docinhos", nome:"Cesta Docinhos", foto:"img/cesta-docinhos.jpg", alt:"Cesta com gomas Fini, pirulitos e balas coloridas", desc:"Gomas, pirulitos e balas para a criançada.", base:"media", itens:{fini:3,pirulito:2,mentos:2,bombom:3}},
   {id:"aniversario", nome:"Sacolinha de aniversário", foto:"img/sacolinha-aniversario.jpg", alt:"Sacola rosa com tag personalizada de aniversário", desc:"Com o nome do aniversariante na tag.", base:"sacolinha", itens:{tag3d:1,fini:1,pirulito:1}}
+];
+
+const NATAL = [
+  {nome:"Amigo secreto", desc:"Cesta pequena com Talento e bombom", base:"pequena", itens:{talento:1,bombom:1}},
+  {nome:"Cesta da família", desc:"Cesta grande com Ferrero, creme de avelã e pão de mel", base:"grande", itens:{ferrero:1,creme:1,paodemel:2,talento:1,biscoito:1}},
+  {nome:"Lembrancinha da equipe", desc:"Sacolinha com bombons e pirulitos", base:"sacolinha", itens:{bombom:2,pirulito:1}}
 ];
 
 const OCASIOES = ["Aniversário","Natal","Amigo secreto","Agradecimento","Sem motivo"];
@@ -448,10 +478,20 @@ function toast(t){ const el = $("toast"); el.textContent = t; el.classList.add("
   if (!estado.base){ e.preventDefault(); toast("Escolha o tamanho da cesta primeiro."); $("bases").scrollIntoView({behavior:"smooth", block:"center"}); }
 }));
 ["c-para","c-data","c-cartao"].forEach(id => $(id).addEventListener("input", atualizar));
-$("natal-btn").addEventListener("click", () => {
-  estado.ocasiao = "Natal"; renderOpcoes("ocasioes", OCASIOES, "ocasiao"); atualizar();
-  $("montar").scrollIntoView({behavior:"smooth"}); toast("Ocasião: Natal. Agora escolha o tamanho e os itens.");
-});
+function irParaMontador(msg){ renderOpcoes("ocasioes", OCASIOES, "ocasiao"); renderMontador(); $("montar").scrollIntoView({behavior:"smooth"}); toast(msg); }
+$("natal-op").innerHTML = NATAL.map((n,k) => `<button type="button" data-natal="${k}"><span><b>${esc(n.nome)}</b><small>${esc(n.desc)}</small></span><span class="p num">${brl(precoModelo(n))}</span></button>`).join("");
+document.querySelectorAll("[data-natal]").forEach(b => b.addEventListener("click", () => {
+  const n = NATAL[b.dataset.natal];
+  estado.base = n.base; estado.qtd = {...n.itens}; estado.ocasiao = "Natal";
+  irParaMontador(n.nome + " no seu pedido. Troque o que quiser.");
+}));
+$("natal-btn").addEventListener("click", () => { estado.ocasiao = "Natal"; irParaMontador("Ocasião: Natal. Agora escolha o tamanho e os itens."); });
+(function(){
+  const h = new Date(), n = new Date(h.getFullYear(), 11, 25), d = Math.ceil((n - new Date(h.getFullYear(), h.getMonth(), h.getDate())) / 864e5);
+  if (d > 0 && d <= 60) $("contagem").textContent = d === 1 ? "Falta 1 dia para o Natal" : "Faltam " + d + " dias para o Natal";
+  else if (d === 0) $("contagem").textContent = "Hoje é Natal";
+  else $("contagem").hidden = true;
+})();
 $("zap-topo").href = linkZap("Olá, Doce Legal! Vi o site de vocês e queria saber sobre as cestas de presente.");
 $("zap-loja").href = $("zap-topo").href;
 const hoje = new Date(); $("c-data").min = new Date(hoje.getTime() - hoje.getTimezoneOffset()*60000).toISOString().slice(0,10);
